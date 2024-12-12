@@ -103,7 +103,8 @@ class _NotesPageState extends State<NotesPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Notes'),
+        elevation: 0,
+        backgroundColor: Colors.transparent,
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: createNote,
