@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:notes/components/drawer.dart';
 import 'package:notes/models/note.dart';
 import 'package:notes/models/note_database.dart';
 import 'package:provider/provider.dart';
@@ -106,6 +107,7 @@ class _NotesPageState extends State<NotesPage> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
+        foregroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       backgroundColor: Theme.of(context).colorScheme.surface,
       floatingActionButton: Padding(
@@ -116,7 +118,7 @@ class _NotesPageState extends State<NotesPage> {
           child: const Icon(Icons.add),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
