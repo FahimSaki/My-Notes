@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:notes/components/drawer_tile.dart';
 import 'package:notes/pages/settings_page.dart';
+import 'package:notes/theme/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final themeProvider = Provider.of<ThemeProvider>(context);
+    final isLightMode = !themeProvider.isDarkMode;
+
     return Drawer(
       backgroundColor: Theme.of(context).colorScheme.surface,
       child: Column(
@@ -20,11 +25,13 @@ class MyDrawer extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Theme.of(context)
                     .colorScheme
-                    .surface, // Use your drawer background color
+                    .surface, // use your drawer background color
               ),
               child: Center(
                 child: Image.asset(
-                  'assets/images/notes_logo_lightmode.png',
+                  isLightMode
+                      ? 'assets/images/notes_logo_lightmode.png'
+                      : 'assets/images/notes_logo_darkmode.png',
                   width: 170,
                   height: 170,
                 ),
@@ -41,7 +48,7 @@ class MyDrawer extends StatelessWidget {
 
           // settings tile
           DrawerTile(
-            title: 'Notes',
+            title: 'Settings',
             leading: const Icon(Icons.settings),
             onTap: () {
               Navigator.pop(context);
