@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "D:/Workstation/CodeBench/Flutter_Projects/notes/windows"
+    "cmake.sourceDirectory": "D:/Workstation/CodeBench/Flutter_Projects/notes/windows",
+    "java.configuration.updateBuildConfiguration": "interactive"
 }

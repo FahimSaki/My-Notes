@@ -39,6 +39,12 @@ android {
     }
 }
 
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'  // Add AppCompat dependency
+    implementation 'androidx.core:core-ktx:1.9.0'
+    // other dependencies...
+}
+
 flutter {
     source = "../.."
 }
