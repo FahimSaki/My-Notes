@@ -40,6 +40,7 @@ class MyDrawer extends StatelessWidget {
           ),
 
           const SizedBox(height: 25.0),
+          // const Spacer(),
 
           // notes tile
           DrawerTile(
