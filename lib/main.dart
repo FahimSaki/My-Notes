@@ -28,10 +28,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: const NotesPage(),
-      theme: Provider.of<ThemeProvider>(context).themeData,
+    return Consumer<ThemeProvider>(
+      builder: (context, themeProvider, child) {
+        return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          home: const NotesPage(),
+          theme: themeProvider.themeData,
+        );
+      },
     );
   }
 }
