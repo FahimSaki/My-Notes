@@ -13,8 +13,8 @@ Welcome to my **Notes App**, a minimalistic and focused application for managing
 
 ## 📱 Screenshots
 
-![Light Mode](path/to/light_mode_screenshot.png)
-![Dark Mode](path/to/dark_mode_screenshot.png)
+<img src="https://raw.githubusercontent.com/FahimSaki/My-Notes/refs/heads/main/assets/screenshots/note_tiles.png" alt="Home Page" width="200"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://raw.githubusercontent.com/FahimSaki/My-Notes/refs/heads/main/assets/screenshots/dark_md.png" alt="Shop Page" width="200"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://raw.githubusercontent.com/FahimSaki/My-Notes/refs/heads/main/assets/screenshots/light_md.png" alt="Drawer" width="200"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 ## 🛠️ Installation
 
@@ -88,7 +88,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## 📧 Contact
 
-For any inquiries or issues, please contact [your-email@example.com](mailto:fahimuzzamaninferno@gmail.com).
+For any inquiries or issues, please contact [fahimuzzamaninferno@gmail.com](mailto:fahimuzzamaninferno@gmail.com).
 
 ---
 
