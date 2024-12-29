@@ -33,6 +33,13 @@ class _NotesPageState extends State<NotesPage> {
         backgroundColor: Theme.of(context).colorScheme.surface,
         content: TextField(
           controller: textController,
+          decoration: InputDecoration(
+            hintText: 'add a note',
+            hintStyle: TextStyle(
+              color:
+                  Theme.of(context).colorScheme.inversePrimary.withOpacity(0.5),
+            ),
+          ),
         ),
         actions: [
           // create a button
